@@ -1,4 +1,4 @@
-package cn.tenbit.haw.core.lang;
+package cn.tenbit.haw.core.constant;
 
 /**
  * @Author bangquan.qian

@@ -1,6 +1,6 @@
 package cn.tenbit.haw.core.util;
 
-import cn.tenbit.haw.core.common.constant.HawConsts;
+import cn.tenbit.haw.core.constant.HawConsts;
 
 /**
  * @author bangquan.qian

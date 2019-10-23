@@ -1,4 +1,4 @@
-package cn.tenbit.haw.core.common.constant;
+package cn.tenbit.haw.core.constant;
 
 /**
  * @author bangquan.qian

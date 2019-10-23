@@ -1,8 +1,7 @@
-package cn.tenbit.haw.core.lang;
+package cn.tenbit.haw.core.util;
 
 import cn.tenbit.haw.core.exception.HawExceptions;
-import cn.tenbit.haw.core.util.HawAsserts;
-import cn.tenbit.haw.core.util.HawStrings;
+import cn.tenbit.haw.core.constant.HawBoolEnums;
 
 /**
  * @Author bangquan.qian
