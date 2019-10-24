@@ -6,5 +6,5 @@ package cn.tenbit.haw.core.support;
  */
 public interface HawExecutor<T> {
 
-    T execute();
+    T execute() throws Throwable;
 }
