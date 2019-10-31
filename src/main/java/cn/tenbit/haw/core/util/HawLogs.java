@@ -1,7 +1,7 @@
 package cn.tenbit.haw.core.util;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import cn.tenbit.haw.core.log.HawLog;
+import cn.tenbit.haw.core.log.HawLogFactory;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -12,23 +12,23 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class HawLogs {
 
-    public static final Log SYS_LOGGER = LogFactory.getLog(HawLogs.class);
+    public static final HawLog SYS_LOGGER = HawLogFactory.getCommonsLogger(HawLogs.class);
 
-    private static final Map<String, Log> LOGGER_MAP = new ConcurrentHashMap<>();
+    private static final Map<String, HawLog> LOGGER_MAP = new ConcurrentHashMap<>();
 
     static {
         LOGGER_MAP.put(getLoggerName(HawLogs.class), SYS_LOGGER);
     }
 
-    public static Log getLogger(Class clz) {
+    public static HawLog getLogger(Class clz) {
         return getLogger(getLoggerName(clz));
     }
 
-    public static Log getLogger(String name) {
+    public static HawLog getLogger(String name) {
         HawAsserts.notBlank(name);
-        Log logger = LOGGER_MAP.get(name);
+        HawLog logger = LOGGER_MAP.get(name);
         if (logger == null) {
-            LOGGER_MAP.put(name, logger = LogFactory.getLog(name));
+            LOGGER_MAP.put(name, logger = HawLogFactory.getCommonsLogger(name));
         }
         if (logger == null) {
             logger = SYS_LOGGER;
