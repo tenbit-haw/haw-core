@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class HawLogs {
 
-    public static final HawLog SYS_LOGGER = HawLogFactory.getCommonsLogger(HawLogs.class);
+    private static final HawLog SYS_LOGGER = HawLogFactory.getCommonsLogger(HawLogs.class);
 
     private static final Map<String, HawLog> LOGGER_MAP = new ConcurrentHashMap<>();
 

@@ -1,8 +1,8 @@
 cn/tenbit/haw/core/collection/HawMaps.class
 cn/tenbit/haw/core/exception/HawExceptions.class
 cn/tenbit/haw/core/util/HawAsserts.class
-cn/tenbit/haw/core/util/HawBooleans.class
 cn/tenbit/haw/core/util/HawRandoms.class
+cn/tenbit/haw/core/util/HawBooleans.class
 cn/tenbit/haw/core/support/HawExecutor.class
 cn/tenbit/haw/core/util/HawSleeps.class
 cn/tenbit/haw/core/util/HawCompares$1.class
@@ -11,8 +11,8 @@ cn/tenbit/haw/core/collection/HawSets.class
 cn/tenbit/haw/core/util/HawArrays.class
 cn/tenbit/haw/core/exception/HawBizException.class
 cn/tenbit/haw/core/support/EmptyObject.class
-cn/tenbit/haw/core/util/HawStrings.class
 cn/tenbit/haw/core/util/HawCompares$CompareOperation.class
+cn/tenbit/haw/core/util/HawStrings.class
 cn/tenbit/haw/core/util/HawCompares.class
 cn/tenbit/haw/core/exception/HawSysException.class
 cn/tenbit/haw/core/util/HawJsons.class
@@ -20,12 +20,10 @@ cn/tenbit/haw/core/util/HawObjects.class
 cn/tenbit/haw/core/exception/HawExceptionOperations.class
 cn/tenbit/haw/core/util/HawCollections.class
 cn/tenbit/haw/core/constant/HawBoolEnums.class
-cn/tenbit/haw/core/util/HawTrans.class
-cn/tenbit/haw/core/util/HawCopys.class
 cn/tenbit/haw/core/exception/HawCodeDefines.class
 cn/tenbit/haw/core/util/HawDefaults.class
-cn/tenbit/haw/core/util/HawNumbers.class
 cn/tenbit/haw/core/constant/HawConsts.class
+cn/tenbit/haw/core/util/HawNumbers.class
 cn/tenbit/haw/core/util/HawConsoles.class
 cn/tenbit/haw/core/exception/HawException.class
 cn/tenbit/haw/core/collection/HawLists.class
