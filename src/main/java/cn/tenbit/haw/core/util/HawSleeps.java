@@ -1,6 +1,6 @@
 package cn.tenbit.haw.core.util;
 
-import cn.tenbit.haw.core.exception.HawExceptions;
+import cn.tenbit.haw.core.support.HawExecutor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,13 +10,15 @@ import java.util.concurrent.TimeUnit;
  */
 public class HawSleeps {
 
-    public static void sleep(long timeOut, TimeUnit timeUnit) {
+    public static void sleep(final long timeOut, final TimeUnit timeUnit) {
         HawAsserts.notNull(timeUnit);
-        try {
-            timeUnit.sleep(timeOut);
-        } catch (Throwable e) {
-            throw HawExceptions.ofSys(e).newOne();
-        }
+        HawInvokes.invokeWithTurnRe(new HawExecutor<Void>() {
+            @Override
+            public Void execute() throws Throwable {
+                timeUnit.sleep(timeOut);
+                return null;
+            }
+        });
     }
 
     public static void sleepSeconds(long seconds) {

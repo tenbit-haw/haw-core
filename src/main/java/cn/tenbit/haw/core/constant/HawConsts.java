@@ -25,4 +25,6 @@ public interface HawConsts {
     int[] INT_PRIMITIVE_ARRAY_EMPTY = new int[0];
 
     long[] LONG_PRIMITIVE_ARRAY_EMPTY = new long[0];
+
+    String TIME_FORMAT_PATTERN = "yyyy-MM-dd HH:mm:ss";
 }

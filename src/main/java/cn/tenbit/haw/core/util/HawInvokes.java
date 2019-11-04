@@ -27,4 +27,12 @@ public class HawInvokes {
         }
         return null;
     }
+
+    public static <T> T invokeWithTurnRe(HawExecutor<T> executor) {
+        try {
+            return executor.execute();
+        } catch (Throwable e) {
+            throw HawExceptions.turns2Re(e);
+        }
+    }
 }
