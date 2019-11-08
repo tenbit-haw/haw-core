@@ -10,9 +10,15 @@ public interface HawConsts {
 
     String STRING_SPACE = " ";
 
-    String STRING_LF = "\n";
-
     String STRING_CR = "\r";
+
+    String STRING_UL = "_";
+
+    String STRING_LF = System.getProperty("line.separator", "\n");
+
+    String STRING_COMMA = ",";
+
+    String STRING_SHAPE = "#";
 
     Object[] OBJECT_ARRAY_EMPTY = new Object[0];
 
@@ -27,4 +33,10 @@ public interface HawConsts {
     long[] LONG_PRIMITIVE_ARRAY_EMPTY = new long[0];
 
     String TIME_FORMAT_PATTERN = "yyyy-MM-dd HH:mm:ss";
+
+    String SUPPRESS_WARNING_UNCHECKED = "unchecked";
+
+    String SUPPRESS_WARNING_RAWTYPE = "rawtype";
+
+    String SUPPRESS_WARNING_DEPRECATION = "deprecation";
 }

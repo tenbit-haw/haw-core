@@ -24,4 +24,12 @@ public class HawSleeps {
     public static void sleepSeconds(long seconds) {
         sleep(seconds, TimeUnit.SECONDS);
     }
+
+    public static void randomRangeSleep(long timeOut, int minus, int plus, TimeUnit timeUnit) {
+        sleep(HawRandoms.randomRangePrimitiveLong(timeOut, minus, plus), timeUnit);
+    }
+
+    public static void randomRangeSleepSeconds(int timeOut, int minus, int plus) {
+        randomRangeSleep(timeOut, minus, plus, TimeUnit.SECONDS);
+    }
 }

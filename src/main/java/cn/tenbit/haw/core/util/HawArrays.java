@@ -1,6 +1,7 @@
 package cn.tenbit.haw.core.util;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * @author bangquan.qian
@@ -43,5 +44,24 @@ public class HawArrays {
     public static <T> T[] toArray(Collection<T> col, T[] arr) {
         HawAsserts.notNull(col);
         return col.toArray(arr);
+    }
+
+    public static <T> List<T> asList(T[] objs) {
+        return HawCollections.asList(objs);
+    }
+
+    public long[] primitiveLong2IntArray(int[] arr) {
+        if (arr == null) {
+            return null;
+        }
+        int len = arr.length;
+        if (len < 1) {
+            return LONG_PRIMITIVE_EMPTY;
+        }
+        long[] dst = new long[len];
+        for (int idx = 0; idx < len; idx++) {
+            dst[idx] = arr[idx];
+        }
+        return dst;
     }
 }

@@ -1,7 +1,7 @@
 package cn.tenbit.haw.core.util;
 
-import cn.tenbit.haw.core.exception.HawExceptions;
 import cn.tenbit.haw.core.constant.HawBoolEnums;
+import cn.tenbit.haw.core.exception.HawExceptions;
 
 /**
  * @Author bangquan.qian
