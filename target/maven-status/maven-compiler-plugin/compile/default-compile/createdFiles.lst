@@ -1,6 +1,7 @@
 cn/tenbit/haw/core/chain/HawOnCatchExecutable.class
 cn/tenbit/haw/core/util/HawIOs.class
 cn/tenbit/haw/core/collection/HawMaps.class
+cn/tenbit/haw/core/chain/HawExecuteChain$HawExecuteChainBuilder.class
 cn/tenbit/haw/core/util/HawClass.class
 cn/tenbit/haw/core/chain/HawExecutable.class
 cn/tenbit/haw/core/util/HawRandoms.class
@@ -35,7 +36,6 @@ cn/tenbit/haw/core/exception/HawException.class
 cn/tenbit/haw/core/collection/HawLists.class
 cn/tenbit/haw/core/chain/HawExecuteChain.class
 cn/tenbit/haw/core/intercept/HawInterceptChain.class
-cn/tenbit/haw/core/chain/HawExecuteChain$JxExecuteChainBuilder.class
 cn/tenbit/haw/core/memqueue/policy/IgnoreOverflowPolicy.class
 cn/tenbit/haw/core/util/HawClass$1.class
 cn/tenbit/haw/core/memqueue/HareConcurrentMemoryQueue$1.class
