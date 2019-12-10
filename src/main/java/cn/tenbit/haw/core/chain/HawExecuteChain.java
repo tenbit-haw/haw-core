@@ -22,21 +22,21 @@ public class HawExecuteChain<T> {
     private HawExecuteChain() {
     }
 
-    public static <T> JxExecuteChainBuilder<T> newBuilder() {
-        return new JxExecuteChainBuilder<T>();
+    public static <T> HawExecuteChainBuilder<T> newBuilder() {
+        return new HawExecuteChainBuilder<T>();
     }
 
-    public static class JxExecuteChainBuilder<E> {
+    public static class HawExecuteChainBuilder<E> {
 
         private HawExecuteChain<E> chain = new HawExecuteChain<>();
 
-        public JxExecuteChainBuilder<E> then(HawExecutable<E> executable) {
+        public HawExecuteChainBuilder<E> then(HawExecutable<E> executable) {
             HawAsserts.notNull(executable, "executable is null");
             chain.executables.add(executable);
             return this;
         }
 
-        public JxExecuteChainBuilder<E> onCatch(HawOnCatchExecutable<E> executable) {
+        public HawExecuteChainBuilder<E> onCatch(HawOnCatchExecutable<E> executable) {
             HawAsserts.notNull(executable, "executable is null");
             if (chain.onCatchExecutable != null) {
                 throw HawExceptions.ofSys("onCatch already set").newOne();
@@ -45,7 +45,7 @@ public class HawExecuteChain<T> {
             return this;
         }
 
-        public JxExecuteChainBuilder<E> onFinally(HawExecutable<E> executable) {
+        public HawExecuteChainBuilder<E> onFinally(HawExecutable<E> executable) {
             HawAsserts.notNull(executable, "executable is null");
             if (chain.onFinallyExecutable != null) {
                 throw HawExceptions.ofSys("onFinally already set").newOne();
